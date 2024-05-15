@@ -1,0 +1,1 @@
+This project is developed for control drone using hand gestures in real time. Project uses MediaPipe Technology to detect hand gestures. If you have annny problem open a issue i would be glad to help solve the problem 
