@@ -1,0 +1,9 @@
+# Compatibility constraints for legacy MediaPipe Solutions and TensorFlow Lite.
+# This set has not been installed or flight-tested during the repository cleanup.
+numpy>=1.23.5,<2
+opencv-contrib-python>=4.8,<4.12
+mediapipe==0.10.21
+tensorflow>=2.12,<2.16
+configargparse>=1.5,<2
+dronekit==2.9.2
+pymavlink>=2.4,<3

@@ -99,9 +99,9 @@ class GestureController:
             self.set_velocity(0, -1, 0)
         elif gesture_id == 7:  # Right
             self.set_velocity(0, 1, 0)
-        elif gesture_id == 4:  # Up
+        elif gesture_id == 4:  # Down (positive Z in local NED)
             self.set_velocity(0, 0, 1)
-        elif gesture_id == 2:  # Down
+        elif gesture_id == 2:  # Up (negative Z in local NED)
             self.set_velocity(0, 0, -1)
         elif gesture_id == 1:  # Stop
             self.stop()
@@ -124,3 +124,7 @@ class GestureController:
             print("Vehicle is not in GUIDED mode. Cannot land.")
 
 
+
+    def close(self):
+        """Close the vehicle connection after the application exits."""
+        self.vehicle.close()
